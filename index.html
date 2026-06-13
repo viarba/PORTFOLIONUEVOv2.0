@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/miestilo.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="index.js"></script>
+    <title>Portfolio - Vicente Arce Bailén</title>
+</head>
+<body>
+
+    <header>
+        <h1>Vicente Arce Bailén</h1>
+        <img src="media/img/foto.jpg" alt="Foto de Vicente">
+        <nav>
+            <ul class="navegacion">
+                <li><a href="#curriculum">Currículum</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="curriculum">
+        <section>
+            <h2>Información Personal</h2>
+            <ul>
+                <li><p><strong>Nombre:</strong> Vicente</p></li>
+                <li><p><strong>Apellidos:</strong> Arce Bailén</p></li>
+                <li><p><strong>Email:</strong> vicente2020@gmail.com</p></li>
+                <li><p><strong>Teléfono:</strong> 692 806 621</p></li>
+                <li><p><strong>Ubicación:</strong> Madrid, España</p></li>
+                <li><p><strong>Edad:</strong> 21</p></li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Educación</h2>
+            <table>
+                <tr>
+                    <th>Título</th>
+                    <th>Centro</th>
+                    <th>Año</th>
+                </tr>
+                <tr>
+                    <td>ESO</td>
+                    <td>IES Benejúzar</td>
+                    <td>2017 - 2022</td>
+                </tr>
+                <tr>
+                    <td>GM Sistemas Microinformáticos y Red</td>
+                    <td>EFA El Campico</td>
+                    <td>2023 - 2025</td>
+                </tr>
+                <tr>
+                    <td>GS Desarrollo WEB (DAW)</td>
+                    <td>EFA El Campico</td>
+                    <td>2025 - Actualidad</td>
+                </tr>
+                <tr>
+                    <td>Nivel B1 Inglés</td>
+                    <td>Trinity College London</td>
+                    <td>2022 - 2024</td>
+                </tr>
+                <tr>
+                    <td>Nivel B2 Inglés</td>
+                    <td>Trinity College London</td>
+                    <td>2024 - Actualidad</td>
+                </tr>
+                <tr>
+                    <td>Nivel B1 Valenciano</td>
+                    <td>JQCV</td>
+                    <td>2020 - 2022</td>
+                </tr>
+            </table>
+        </section>
+
+        <section>
+            <h2>Experiencia Personal</h2>
+            <ul>
+                <li>Control y gestión de venta de viviendas en GrupoMPC (2025)</li>
+                <li>Control y gestión de videos de Gimnasio en ISN Almoradí (2025)</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Habilidades</h2>
+            <ul>
+                <li>HTML</li>
+                <li>PHP</li>
+                <li>CSS</li>
+                <li>Java</li>
+                <li>Adobe Premiere Pro</li>
+                <li>Adobe Photoshop</li>
+            </ul>
+        </section>
+    </main>
+
+    <section id="portfolio" class="proyectos">
+        <h2>Mis Proyectos</h2>
+        <div class="tarjeta-proyecto">
+            <h3>Web de artículos de deporte</h3>
+            <p>Sitio web para compra de artículos de deporte.</p>
+        </div>
+        <div class="tarjeta-proyecto">
+            <h3>Web de videojuegos</h3>
+            <p>Sitio web que te informa de los juegos de Inazuma Eleven y sus plataformas.</p>
+        </div>
+        <div class="tarjeta-proyecto">
+            <h3>Web de Dragon Ball</h3>
+            <p>Sitio web que te da una pequeña información sobre los juegos de DB en dispositivos móviles.</p>
+        </div>
+    </section>
+
+    <section id="contacto">
+        <h2>Comunícate conmigo</h2>
+        <form id="formContacto" action="db/db.php" method="post" enctype="multipart/form-data">
+            
+            <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+
+            <div class="form-group">
+                <label for="apellido">Primer Apellido:</label>
+                <input type="text" name="apellido" id="apellido">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" name="telefono" id="telefono">
+            </div>
+
+            <div class="form-group">
+                <label for="fecha">Fecha:</label>
+                <input type="date" name="fecha" id="fecha">
+            </div>
+
+            <div class="form-group">
+                <label for="hora">Hora de envío:</label>
+                <input type="time" name="hora" id="hora">
+            </div>
+
+            <div class="form-group">
+                <label for="file">Sube tu CV:</label>
+                <input type="file" name="file" id="file" class="subir">
+            </div>
+
+            <div class="form-group">
+                <label for="mensaje">Mensaje:</label>
+                <textarea name="mensaje" id="mensaje" rows="5" required placeholder="Comentario"></textarea>
+            </div>
+
+            <div class="form-botones">
+                <input type="submit" value="Enviar" class="enviar">
+                <input type="reset" value="Borrar" class="borrar" id="btnBorrar">
+            </div>
+        </form>
+    </section>
+
+    <footer>
+        <p>Vicente Arce Bailén 2026</p>
+        <p>Email: vicente2020@gmail.com</p>
+        <p>Teléfono: 692 806 621</p>
+    </footer>
+
+    
+
+</body>
+</html>
