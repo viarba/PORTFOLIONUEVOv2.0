@@ -292,13 +292,60 @@ form {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
+.tags-proyecto {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.tag {
+    background-color: #e34c26;
+    font-size: 0.7rem;
+    font-weight: bold;
+    padding: 4px 10px;
+    border-radius: 12px;
+    text-transform: uppercase;
+    color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    letter-spacing: 0.5px;
+}
+
 
 footer {
-    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
     padding: 20px;
     margin: 20px;
     background-color: #232020;
     border-radius: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+footer p {
+    margin: 0;
+    color: #ffffff;
+    font-size: 0.95rem;
+}
+
+.redes-sociales {
+    display: flex;
+    gap: 20px;
+}
+
+.redes-sociales a i {
+    font-size: 1.6rem;
+    color: #d51a1a;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.redes-sociales a i:hover {
+    color: #d9fc8c;
+    transform: translateY(-3px);
 }
 
 @media (max-width: 600px) {
@@ -333,6 +380,11 @@ footer {
         text-align: center;
         padding-right: 0;
         margin-bottom: 5px;
+    }
+    footer {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
     }
 }
 
