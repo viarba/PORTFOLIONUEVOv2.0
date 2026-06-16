@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="css/miestilo.css">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="index.js"></script>
@@ -10,29 +11,19 @@
 </head>
 <body>
 
-    <header>
+    <header class="barra-navegacion">
         <h1>Vicente Arce Bailén</h1>
-        <img src="media/img/foto.jpg" alt="Foto de Vicente">
-        <nav>
-            <ul class="navegacion">
-                <li><a href="#curriculum">Currículum</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
+        <nav class="menu-enlaces">
+            <a href="#portfolio" class="enlace-nav">Portfolio</a>
+            <a href="#curriculum" class="enlace-nav">Currículum</a>
+            <a href="#contacto" class="enlace-nav">Contacto</a>
         </nav>
+        <img src="media/img/foto.jpg" alt="Foto de Vicente Arce">
     </header>
 
     <main id="curriculum">
         <section>
-            <h2>Información Personal</h2>
-            <ul>
-                <li><p><strong>Nombre:</strong> Vicente</p></li>
-                <li><p><strong>Apellidos:</strong> Arce Bailén</p></li>
-                <li><p><strong>Email:</strong> vicente2020@gmail.com</p></li>
-                <li><p><strong>Teléfono:</strong> 692 806 621</p></li>
-                <li><p><strong>Ubicación:</strong> Madrid, España</p></li>
-                <li><p><strong>Edad:</strong> 21</p></li>
-            </ul>
+            <img src="media/img/images.jpg" class="foto-servidor" alt="Foto SERVIDOR WEB">
         </section>
 
         <section>
@@ -76,40 +67,60 @@
             </table>
         </section>
 
-        <section>
+        <section class="seccion-doble">
+        
+        <div class="columna-contenido">
             <h2>Experiencia Personal</h2>
-            <ul>
-                <li>Control y gestión de venta de viviendas en GrupoMPC (2025)</li>
-                <li>Control y gestión de videos de Gimnasio en ISN Almoradí (2025)</li>
-            </ul>
-        </section>
+            <p>Control y gestión de venta de viviendas en GrupoMPC (2025)</p>
+            <p>Control y gestión de videos de Gimnasio en ISN Almoradí (2025)</p>
+            <p>Control y gestión de administración de productos en CrupoMPC (2025)</p>
+            <p>Control y gestión de almacen en GrupoMPC</p>
+        </div>
 
-        <section>
+        <div class="columna-contenido">
             <h2>Habilidades</h2>
-            <ul>
-                <li>HTML</li>
-                <li>PHP</li>
-                <li>CSS</li>
-                <li>Java</li>
-                <li>Adobe Premiere Pro</li>
-                <li>Adobe Photoshop</li>
-            </ul>
-        </section>
+            <p>HTML</p>
+            <p>PHP</p>
+            <p>CSS</p>
+            <p>Java</p>
+            <p>Adobe Premiere Pro</p>
+            <p>Adobe Photoshop</p>
+        </div>
+
+    </section>
     </main>
 
     <section id="portfolio" class="proyectos">
         <h2>Mis Proyectos</h2>
         <div class="tarjeta-proyecto">
-            <h3>Web de artículos de deporte</h3>
-            <p>Sitio web para compra de artículos de deporte.</p>
+            <div class="poster">
+                <img src="media/img/orbita_sol.jpg" alt="Orbita SOL">
+            </div>
+            <div class="details">
+                <h3>Web de orbita de planetas</h3>
+                <p>Sitio web para observar como se mueve un planeta alrededor del sol.</p>
+                <a href="https://github.com/viarba/Orbita-SOL"><i class="fa-brands fa-github"></i></a>
+            </div>
         </div>
         <div class="tarjeta-proyecto">
-            <h3>Web de videojuegos</h3>
-            <p>Sitio web que te informa de los juegos de Inazuma Eleven y sus plataformas.</p>
+            <div class="poster">
+                <img src="media/img/calculadora.png" alt="calculadora simple">
+            </div>
+            <div class="details">
+                <h3>Web de Calculadora</h3>
+                <p>Sitio web que te permite realizar las operaciones basicas de una calculadora.</p>
+                <a href="https://github.com/viarba/calculadora"><i class="fa-brands fa-github"></i></a>
+            </div>
         </div>
         <div class="tarjeta-proyecto">
-            <h3>Web de Dragon Ball</h3>
-            <p>Sitio web que te da una pequeña información sobre los juegos de DB en dispositivos móviles.</p>
+            <div class="poster">
+                <img src="media/img/Dragon Ball.png" alt="enlace">
+            </div>
+            <div class="details">
+                <h3>Web de Dragon Ball</h3>
+                <p>Sitio web que te da una pequeña información sobre los juegos de DB en dispositivos móviles.</p>
+                <a href="https://github.com/viarba/Web-Dragon-Ball"><i class="fa-brands fa-github"></i></a>
+            </div>
         </div>
     </section>
 
