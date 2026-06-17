@@ -79,25 +79,46 @@ header img {
 }
 
 .seccion-hero {
-    display: flex;
-    justify-content: space-between;
+    padding: 80px 10%;
+    text-align: center;
+    display: block;
+}
+
+.hero-texto {
+    max-width: 800px;
+    margin: 0 auto;
+}
+.titulo-con-foto-hero {
+    display: inline-flex;
     align-items: center;
-    padding: 60px 10%;
-    gap: 40px;
+    gap: 15px;
+    margin-bottom: 20px;
 }
 
 .hero-texto h2 {
+    font-family: 'Arial Black', 'Impact', 'Montserrat', sans-serif;
     color: #d51a1a;
-    font-size: 2rem;
+    font-size: 4rem;
+    font-weight: 900;
+    line-height: 1.1;
+    letter-spacing: -1.5px;
 }
 
-.foto-hero {
-    max-width: 350px;
-    width: 100%;
-    height: auto;
-    border-radius: 12px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
-    opacity: 0.9;
+.hero-texto p {
+    font-family: 'Arial Black', 'Impact', 'Montserrat', sans-serif;
+    color: #d51a1a;
+    font-size: 1.5rem;
+    line-height: 1.1;
+    letter-spacing: -1.5px;
+}
+
+.foto-miniatura-h2 {
+    height: 7rem; 
+    width: 7rem;
+    flex-shrink: 0; 
+    border-radius: 50%;
+    object-fit: cover;
+    transform: translateY(2px); 
 }
 
 section {
@@ -121,12 +142,6 @@ section h2 {
     padding-bottom: 10px;
 }
 
-.foto-servidor {
-    width: 70%;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
 
 .seccion-doble {
     flex-direction: row !important;
@@ -549,15 +564,35 @@ footer p {
         text-align: center;
     }
     .seccion-hero {
+        padding: 50px 20px;
         flex-direction: column;
         text-align: center;
     }
-    .menu-enlaces {
+    .titulo-con-foto-hero {
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
         gap: 15px;
     }
-    header img {
-        width: 90%;
-        height: auto;
+    .hero-texto h2 {
+        font-size: 2.2rem;
+        letter-spacing: -1px;
+        text-align: center;
+    }
+    .foto-miniatura-h2 {
+        height: 4rem;
+        width: 4rem;
+        border-width: 2px;
+        transform: translateY(0);
+    }
+    .hero-texto p {
+        font-size: 1rem;
+        letter-spacing: -0.5px;
+        line-height: 1.3;
+        margin-top: 10px;
+    }
+    .menu-enlaces {
+        gap: 15px;
     }
     .seccion-doble {
         flex-direction: column;
