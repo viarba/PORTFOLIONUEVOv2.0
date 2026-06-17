@@ -142,7 +142,6 @@ section h2 {
     padding-bottom: 10px;
 }
 
-
 .seccion-doble {
     flex-direction: row !important;
     justify-content: space-around;
@@ -154,12 +153,14 @@ section h2 {
     box-sizing: border-box;
 }
 
-.seccion-doble {
-    flex-direction: row !important;
-    justify-content: space-around;
-    align-items: flex-start;
-    gap: 40px;
+.columna-bloque {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
+
 .columna-contenido {
     flex: 1;
     display: flex;
@@ -170,11 +171,12 @@ section h2 {
 
 .educacion-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
     width: 100%;
-    max-width: 1200px;
+    max-width: 1100px;
     margin: 0 auto;
+    align-items: stretch;
 }
 
 .tarjeta-edu {
@@ -231,6 +233,15 @@ section h2 {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     text-align: left;
     border: 1px solid rgba(255, 255, 255, 0.02);
+}
+
+.item-experiencia h2 {
+    margin: 0 0 15px 0;
+    color: #ffffff;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    padding-left: 15px;
+    position: relative;
 }
 
 .item-experiencia p {
@@ -597,6 +608,14 @@ footer p {
     .seccion-doble {
         flex-direction: column;
         gap: 30px;
+    }
+    .columna-contenido {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .educacion-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
     }
     .form-campos-grid {
         grid-template-columns: 1fr;
