@@ -200,14 +200,16 @@ section h2 {
 }
 
 .tarjeta-edu:hover {
-    border-color: #d51a1a;
-    box-shadow: 0 0 12px rgba(213, 26, 26, 0.2);
+    border-color: #e34c26;
+    box-shadow: 0 0 15px rgba(227, 76, 38, 0.6),
+                0 20px 60px rgba(227, 76, 38, 0.35);
     transform: translateY(-3px);
 }
 
 .tarjeta-edu.idioma:hover {
     border-color: #d9fc8c;
-    box-shadow: 0 0 12px rgba(213, 26, 26, 0.2);
+    box-shadow: 0 0 15px rgba(217, 252, 140, 0.6),
+                0 20px 60px rgba(217, 252, 140, 0.35);
     transform: translateY(-3px);
 }
 
@@ -324,8 +326,38 @@ section h2 {
     font-weight: bold;
 }
 
-.skill-item:hover {
-    border-color: #d51a1a;
+#skill-html5:hover {
+    border-color: #e34c26;
+    transform: scale(1.05);
+    background-color: #201e1e;
+}
+
+#skill-css3:hover {
+    border-color: #264de4;
+    transform: scale(1.05);
+    background-color: #201e1e;
+}
+
+#skill-php:hover {
+    border-color: #777bb4;
+    transform: scale(1.05);
+    background-color: #201e1e;
+}
+
+#skill-java:hover {
+    border-color: #007396;
+    transform: scale(1.05);
+    background-color: #201e1e;
+}
+
+#skill-premiere:hover {
+    border-color: #ff0055;
+    transform: scale(1.05);
+    background-color: #201e1e;
+}
+
+#skill-photoshop:hover {
+    border-color: #31a8ff;
     transform: scale(1.05);
     background-color: #201e1e;
 }
