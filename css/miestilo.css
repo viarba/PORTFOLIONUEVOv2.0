@@ -658,12 +658,44 @@ footer p {
         gap: 15px;
     }
     .seccion-doble {
-        flex-direction: column;
-        gap: 30px;
+        display: flex;
+        flex-direction: row !important;
+        justify-content: center; 
+        gap: 12px;              
+        padding: 0 15px;         
+        width: 100%;
+        box-sizing: border-box;
+        flex-wrap: wrap;
     }
+
+    .seccion-doble > .columna-contenido > h2 {
+        width: 100vw;
+        max-width: 100%;
+        font-size: 1.2rem;
+        margin-bottom: 15px;
+        white-space: normal;
+    }
+
     .columna-contenido {
-        flex-direction: column;
-        gap: 20px;
+        flex: 1;
+        max-width: 185px; 
+        min-width: 0;
+    }
+
+    .item-experiencia h2 {
+        font-size: 1.1rem;
+        padding-left: 0;
+    }
+
+    .skill-item {
+        width: 100%;
+        padding: 12px 5px; 
+    }
+    .skills-grid {
+        display: flex;
+        flex-direction: column; 
+        gap: 10px;
+        width: 100%;
     }
     .educacion-grid {
         grid-template-columns: 1fr;
