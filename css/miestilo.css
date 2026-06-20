@@ -13,6 +13,10 @@ body {
     font-family: Arial, sans-serif;
 }
 
+body h1{
+    color:  #94a3b8;        
+}
+
 header img {
     width: 80px; 
     height: 80px;
@@ -74,7 +78,8 @@ header img {
 
 .menu-enlaces a {
     text-decoration: none;
-    color: #d51a1a;
+    color:  #e2e8f0;
+    transition: text-shadow 0.3s ease, transform 0.3s ease;
     font-weight: bold;
 }
 
@@ -97,7 +102,7 @@ header img {
 
 .hero-texto h2 {
     font-family: 'Arial Black', 'Impact', 'Montserrat', sans-serif;
-    color: #d51a1a;
+    color: #3c79ac;
     font-size: 4rem;
     font-weight: 900;
     line-height: 1.1;
@@ -106,7 +111,7 @@ header img {
 
 .hero-texto p {
     font-family: 'Arial Black', 'Impact', 'Montserrat', sans-serif;
-    color: #d51a1a;
+    color:  #94a3b8;
     font-size: 1.5rem;
     line-height: 1.1;
     letter-spacing: -1.5px;
@@ -136,7 +141,7 @@ section h2 {
     width: 100%;
     text-align: center;
     margin-bottom: 25px;
-    color: #d51a1a;
+    color: #3c79ac;
     font-size: 1.8rem;
     text-transform: uppercase;
     padding-bottom: 10px;
@@ -183,7 +188,7 @@ section h2 {
     background-color: #1a1818;
     padding: 20px;
     border-radius: 8px;
-    border-left: 4px solid #d51a1a;
+    border-left: 4px solid #e34c26;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease;
     text-align: left;
@@ -354,7 +359,7 @@ form {
     text-align: left;
     margin-bottom: 8px;
     font-weight: bold;
-    color: #d51a1a;
+    color:  #94a3b8;
     font-size: 0.9rem;
     letter-spacing: 0.5px;
 }
@@ -565,7 +570,7 @@ footer p {
 
 .redes-sociales a i {
     font-size: 1.6rem;
-    color: #d51a1a;
+    color:#3c79ac;
     transition: transform 0.3s ease, color 0.3s ease;
 }
 
