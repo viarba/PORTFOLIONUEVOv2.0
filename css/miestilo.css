@@ -374,7 +374,7 @@ form {
 }
 
 .form-group textarea {
-     resize: vertical;
+    resize: vertical;
     min-height: 120px;
     max-height: 350px;
 }
