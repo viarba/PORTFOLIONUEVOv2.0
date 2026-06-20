@@ -190,15 +190,24 @@ section h2 {
     border-radius: 8px;
     border-left: 4px solid #e34c26;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
     text-align: left;
 }
 
 .tarjeta-edu.idioma {
     border-left-color: #d9fc8c;
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .tarjeta-edu:hover {
+    border-color: #d51a1a;
+    box-shadow: 0 0 12px rgba(213, 26, 26, 0.2);
+    transform: translateY(-3px);
+}
+
+.tarjeta-edu.idioma:hover {
+    border-color: #d9fc8c;
+    box-shadow: 0 0 12px rgba(213, 26, 26, 0.2);
     transform: translateY(-3px);
 }
 
